@@ -31,7 +31,7 @@ def status():
 
 @app.route('/users')
 def get_users():
-  return jsonify({'users': ['user1', 'user2', 'user3', 'users4', 'users5'], 'statusCode': '200'})
+  return jsonify({'users': ['interactive-cares-ic-04'], 'statusCode': '200'})
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5001)
