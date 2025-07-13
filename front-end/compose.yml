@@ -1,0 +1,4 @@
+services:
+  backend:
+    image: nginx:latest
+  back-end-db: {}
