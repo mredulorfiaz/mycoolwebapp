@@ -10,8 +10,6 @@ RUN --mount=type=cache,target=/root/.cache/pip pip install -r requirements.txt
 
 ARG AIOHTTP_VERSION=3.12.13 REQUESTS_VERSION
 
-RUN pip install aiohttp==${AIOHTTP_VERSION} requests==${REQUESTS_VERSION}
-
 FROM python:3.9-slim AS dev
 
 COPY --from=build /usr/local/lib/python3.9/site-packages /usr/local/lib/python3.9/site-packages
